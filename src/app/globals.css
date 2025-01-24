@@ -40,3 +40,10 @@ input[type="checkbox"]:checked::before {
   background-color: #0F533280;
   overflow: hidden;
 }
+@media(max-width:960px){
+  .body-bg {
+    background-position-x: initial;
+    background-color: currentcolor;
+
+  }
+}
