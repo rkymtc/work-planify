@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "DM Sans", serif;
+}
+html {
+  font-size: 16px
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8d8d8d;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+}
+input[type="checkbox"]:checked {
+  background-color: #16a34a;
+  /* Tailwind yeşil-600 (#16a34a) */
+  border-color: #16a34a;
+}
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  /* Checkbox yüksekliğine göre */
+}
+.body-bg {
+  height: 100vh;
+  padding: 0 11px;
+  position: relative;
+  background: url("/assets/images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #0F533280;
+  overflow: hidden;
+}
